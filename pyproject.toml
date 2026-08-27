@@ -1,0 +1,14 @@
+[project]
+name = "dagster-aws-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dagster>=1.13.6",
+    "dagster-webserver>=1.13.6",
+    "dagster-docker"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
