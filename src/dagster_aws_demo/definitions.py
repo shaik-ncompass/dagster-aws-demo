@@ -1,6 +1,6 @@
 from dagster import Definitions
-from .assets import addition, subtraction
+from .assets import addition, subtraction, multiplication
 
 defs = Definitions(
-    assets = [addition, subtraction]
+    assets = [addition, subtraction, multiplication] 
 )

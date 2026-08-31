@@ -9,3 +9,7 @@ def addition():
 @dg.asset
 def subtraction(addition):
     return addition - 3
+
+@dg.asset
+def multiplication(subtraction):
+    return subtraction * 2
