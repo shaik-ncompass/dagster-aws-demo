@@ -13,7 +13,7 @@ services:
 
     volumes:
       - .:/app
-      - ./dagster_home:/app/dagster_home
+      
 
     command:
       - sh
@@ -55,7 +55,7 @@ services:
 
     volumes:
       - .:/app
-      - ./dagster_home:/app/dagster_home
+  
 
     depends_on:
       dagster-code-location:
@@ -100,8 +100,7 @@ services:
 
     volumes:
       - .:/app
-      - ./dagster_home:/app/dagster_home
-
+     
     depends_on:
       dagster-code-location:
         condition: service_healthy

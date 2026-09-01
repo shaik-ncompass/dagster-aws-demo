@@ -10,6 +10,8 @@ COPY workspace.yml .
 
 RUN pip install .
 
+RUN mkdir -p /app/dagster_home/storage
+
 EXPOSE 3000
 
 EXPOSE 4000
